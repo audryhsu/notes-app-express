@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const cors = require('cors')
 
+
 let notes = [
   {
     id: 1,
@@ -23,6 +24,7 @@ let notes = [
   }
 ]
 
+app.use(express.static('build'))
 app.use(cors())
 app.use(express.json()) // built-in express middleware to parse JSON
 
