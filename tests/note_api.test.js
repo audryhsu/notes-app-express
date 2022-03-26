@@ -104,8 +104,6 @@ describe('when viewing a specific note', function () {
   test.only('returns 404 if note no longer exists', async () => {
     const removedNoteId = await helper.nonExistingId()
 
-    console.log(removedNoteId);
-
     await api
       .get(`/api/notes/${removedNoteId}`)
       .expect(404)
