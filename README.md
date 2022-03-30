@@ -1,2 +1,2 @@
 # notes-app-express
-Backend Express server for notes app. Part of Fullstack Open. 
+Note app to create and store notes using Express, NodeJS, MongoDB. Part of Fullstack Open. 
